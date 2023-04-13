@@ -1,0 +1,277 @@
+body{
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Exo', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header{
+    background: rgb(254, 224, 242); 
+    padding: 20px 0;
+}    
+
+
+.caja{
+    width: 940px; 
+    position: relative; 
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute; 
+    top: 110px;
+    right: 0; 
+}
+
+nav li{
+    display: inline; 
+    margin: 0 0 0 15px;
+} 
+
+nav a{
+    text-transform: uppercase; 
+    color: rgb(35, 33, 33); 
+    font-weight: bold; 
+    font-size: 22px; 
+    text-decoration: none;
+}   
+
+nav a:hover{
+    color: rgb(249, 95, 187);
+    text-decoration: underline;
+}
+
+.productos{
+    width: 980px; 
+    margin: 0 auto; 
+    padding: 50px; 
+}
+
+.productos li{
+    display: inline-block; 
+    text-align: center; 
+    width: 30%; 
+    vertical-align: top; 
+    margin: 0 1.5%; 
+    padding: 30px 20px; 
+    box-sizing: border-box; 
+    border: 2px solid black;
+    border-radius: 10px;
+}  
+
+.productos li:hover{
+    border-color: rgb(249, 95, 187); 
+    
+} 
+
+.productos li:active{
+    border-color: rgb(169, 14, 115);
+}
+
+.productos h2{
+    font-size: 20px; 
+    font-weight: bold;
+}   
+
+.productos li:hover h2{
+    font-size: 22px;
+}
+
+.producto-descripcion{
+    font-size: 18px; 
+} 
+
+.producto-precio{
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-top: 10px;
+}  
+
+footer{
+    text-align: center; 
+    background-color: rgb(236, 221, 211); 
+    background: url(confetti.png) 1px; 
+    padding: 40px;
+} 
+
+.copyrigth{
+    font-size: 13px; 
+    margin: 20px;
+} 
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block; 
+    font-size: 20px;
+    margin: 0 0 10px;
+} 
+
+.input-padron{
+    display: block; 
+    margin: 0 0 20px; 
+    padding: 10px 25px;  
+    width: 50%;
+} 
+
+.checkbox{
+    margin:20px 0;
+}   
+
+.enviar{
+    width: 40%;
+    padding: 15px 0; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color:white; 
+    background: orange; 
+    border: none; 
+    border-radius: 5px; 
+    transition: 1s all; 
+    cursor: pointer;
+}  
+
+.enviar:hover{
+    background: darkorange; 
+    transform: scale(1.2);
+}
+ 
+
+table{
+    margin: 40px 40px;
+} 
+
+thead{
+    background: rgb(248, 152, 223); 
+    color:white; 
+    font-weight: bold;
+} 
+
+td,th{
+    border: 1px solid black; 
+    padding: 15px;
+} 
+
+/*CSS para nuestra home*/ 
+.banner{
+    width: 100%;
+}  
+
+.principal{
+    padding: 3em 0; 
+    background-color: rgb(255, 251, 254); 
+    width: 940px;
+    margin: 0 auto;
+} 
+
+.titulo-principal{
+    text-align: center; 
+    font-size: 2em; 
+    margin: 0 0 1em;
+    clear: left;
+}  
+
+p:first-line{
+    font-style: italic;
+}
+
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.principal p{ 
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+} 
+
+.principal em{
+    font-style: italic;
+}  
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0px;
+}
+
+.mapa{
+    padding: 3em 0; 
+    background: linear-gradient(45deg, rgb(249, 173, 186), rgba(218, 112, 177, 0.343), rgb(247, 141, 159));
+} 
+
+.mapa p{
+    margin: 0 0 2em; 
+    text-align: center;
+   
+}  
+
+.mapa-contenido{
+    width: 940px; 
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0; 
+    background: rgba(246, 233, 239, 0.931);
+}
+
+.contenido-diferenciales{
+    width: 640px; 
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%; 
+    display: inline-block; 
+    vertical-align: top;
+} 
+
+.items{
+    line-height: 1.5;
+}  
+
+.items::before{
+    content:"☆"
+}
+
+.items:first-child{
+    font-weight: bold;
+} 
+
+.imagen-diferenciales{
+    width: 60%; 
+    transition: 400ms; 
+    box-shadow: 10px 10px 30px 15px rgb(251, 180, 157);
+}  
+
+.imagen-diferenciales:hover{
+    opacity: 0.5;
+}
+
+.video{
+    width: 500px;
+    margin: 1em auto;
+} 
+
+/*Si se encuentra una pantalla de hasta 480px aplicame...*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
